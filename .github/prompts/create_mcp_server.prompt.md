@@ -14,6 +14,7 @@ Tu objetivo es generar código, sugerencias y documentación para crear un servi
 
 ## Estructura del proyecto
 
+```
 mcp-servers/
   ├── CONTRIBUTING.md
   ├── LICENSE
@@ -29,6 +30,7 @@ mcp-servers/
           ├── main.cpython-313.pyc
           └── test.cpython-313.pyc
 
+```
 ## Funcionalidades requeridas
 
 1. **Recursos MCP:**
