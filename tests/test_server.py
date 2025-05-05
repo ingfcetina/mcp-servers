@@ -3,7 +3,7 @@ import tempfile
 import shutil
 import pytest
 from datetime import datetime
-from server import list_files, FileInfo
+from mcp_servers.server import list_files, FileInfo
 
 def create_test_files(test_dir):
     files = [
