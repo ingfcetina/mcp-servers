@@ -1,52 +1,42 @@
-# MCP Server: Listado de Archivos
+# Charla: Creación de MCP Servers y su uso con GitHub Copilot en modo Agente
 
-Este proyecto implementa un servidor MCP en Python para listar archivos de un directorio y sus propiedades, siguiendo las mejores prácticas del equipo.
+## Descripción
+
+Este repositorio contiene los materiales y ejemplos utilizados en la charla de una hora sobre la creación de servidores MCP (Model Context Protocol) y su integración con GitHub Copilot en modo agente. La charla está orientada a desarrolladores interesados en extender las capacidades de Copilot mediante servidores personalizados y comprender el flujo de trabajo de los agentes.
+
+## Temario
+
+1. Introducción a MCP y su propósito
+2. Arquitectura de un servidor MCP
+3. Ejemplo práctico: Creación de un MCP Server básico
+4. Integración de MCP Server con GitHub Copilot (modo agente)
+5. Casos de uso y mejores prácticas
+6. Preguntas y respuestas
 
 ## Requisitos
-- Python 3.10+
-- Conda (recomendado para gestión de entornos)
+
+- Node.js >= 18
+- npm o yarn
+- Cuenta de GitHub con acceso a Copilot (modo agente)
+- Editor compatible (VS Code recomendado)
 
 ## Instalación
-```sh
-conda create -n mcp_server_py310 python=3.10
-conda activate mcp_server_py310
-pip install -r requirements.txt
-```
 
-## Configuración
-- Edita `config.yaml` para definir el directorio por defecto y la configuración del servidor.
-- Usa `.env` para variables sensibles (ejemplo incluido).
+```bash
+git clone https://github.com/tu-usuario/charla-mcp-copilot.git
+cd charla-mcp-copilot
+npm install
+```
 
 ## Ejemplo de uso
-```python
-from mcp.server.fastmcp import FastMCP
-from server import list_files
 
-# Listar archivos de un directorio
-archivos = list_files("./")
-for archivo in archivos:
-    print(archivo)
-```
+Consulta la carpeta `ejemplos/` para ver implementaciones de servidores MCP y cómo conectarlos con Copilot.
 
-## Despliegue
-```sh
-uvicorn server:mcp --host 0.0.0.0 --port 8000
-```
+## Recursos adicionales
 
-## Pruebas
-```sh
-pytest test_server.py
-```
+- [Documentación oficial de MCP](https://microsoft.github.io/model-context-protocol/)
+- [GitHub Copilot Agents](https://docs.github.com/copilot/agents)
 
-## Estructura de configuración YAML
-Ver ejemplo robusto en `config.yaml`.
+## Licencia
 
-## Buenas prácticas
-- Validación y sanitización de entradas
-- Logging estructurado
-- Tipado estático y Pydantic
-- Modularidad y tests con pytest
-
----
-
-> Para más detalles, consulta la documentación interna y los comentarios en el código fuente.
+MIT
