@@ -30,7 +30,13 @@ npm install
 
 ## Ejemplo de uso
 
-Consulta la carpeta `ejemplos/` para ver implementaciones de servidores MCP y cómo conectarlos con Copilot.
+```powershell
+# Activa el entorno conda adecuado
+conda activate mcp_server_py310
+
+# Ejecuta el servidor MCP
+mcp dev server.py
+```
 
 ## Recursos adicionales
 

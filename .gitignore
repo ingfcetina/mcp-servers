@@ -95,10 +95,14 @@ ipython_config.py
 #Pipfile.lock
 
 # UV
-#   Similar to Pipfile.lock, it is generally recommended to include uv.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-#uv.lock
+# Para asegurar la reproducibilidad, incluimos uv.lock en control de versiones
+# pero ignoramos .uv/ que almacena las instalaciones locales
+.uv/
+
+# Conda
+# Ignoramos entornos conda locales
+/conda-env/
+.conda/
 
 # poetry
 #   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
@@ -172,3 +176,38 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+.history/
+.ionide/
+
+# Windows specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# MCP Server specific
+# Archivos de notas generados (excepto los de ejemplo)
+sticky_notes.txt
+notes_*.txt
+!example_notes.txt
+
+# Archivos de configuración locales no versionados
+**/local_config.yaml
+**/*_local.yaml
+
+# Logs generados por el servidor
+logs/
+*.log.*
