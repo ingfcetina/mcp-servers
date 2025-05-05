@@ -83,12 +83,15 @@ def list_files(directory: str) -> list[FileInfo]:
 ## Estructura recomendada del proyecto:
 
 ```
-project/
-├── server.py
-├── config.yaml
+mcp-servers/
+├── mcp_servers/
+│   ├── __init__.py
+│   ├── config.yaml
+│   ├── server.py
 ├── requirements.txt
 ├── README.md
 ├── tests/
+│   ├── __init__.py
 │   └── test_server.py
 ```
 
