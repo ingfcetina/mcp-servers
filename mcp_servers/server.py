@@ -19,7 +19,7 @@ def load_config(path: str = "config.yaml") -> dict:
         logger.error(f"Error loading config: {e}")
         return {}
 
-config = load_config()
+config = load_config(os.path.join(os.path.dirname(__file__), "config.yaml"))
 
 def sanitize_directory(directory: str) -> str:
     """Sanitiza y valida la ruta del directorio."""
@@ -104,3 +104,5 @@ def list_files(directory: str) -> list[FileInfo]:
         raise
 
 # No se expone FastAPI ni uvicorn directamente, el SDK MCP se encarga del despliegue.
+if __name__ == "__main__":
+    mcp.run()
