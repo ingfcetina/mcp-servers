@@ -1,0 +1,8 @@
+# requirements.txt
+fastapi
+uvicorn
+python-dotenv
+pyyaml
+pydantic
+mcp
+pytest
