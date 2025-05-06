@@ -1,3 +1,18 @@
+"""
+AI Sticky Notes MCP Server
+
+Este módulo implementa un servidor MCP (Model Context Protocol) para gestionar
+notas adhesivas virtuales. Permite crear, leer y obtener información sobre notas
+almacenadas en un archivo de texto.
+
+Example:
+    Para iniciar el servidor en modo desarrollo:
+        $ uv run --with mcp mcp dev path/to/this/file.py
+
+    Para iniciar el servidor en modo normal:
+        $ uv run --with mcp mcp run path/to/this/file.py
+"""
+
 # server.py
 import os
 from mcp.server.fastmcp import FastMCP

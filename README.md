@@ -298,14 +298,18 @@ El Inspector MCP se abrirá automáticamente en tu navegador en http://localhost
     ```
   - Luego activa el entorno uv
 
-## 📋 Referencia de API
+## 📋 Referencia de componentes del MCP Server para sticky notes
 
-| Tipo | Nombre | Descripción |
-|------|--------|-------------|
-| 🛠️ Tool | add_note | Agrega una nota al archivo |
-| 🛠️ Tool | read_notes | Lee todas las notas del archivo |
-| 📚 Resource | notes://latest | Obtiene la nota más reciente |
-| 💬 Prompt | note_summary_prompt | Genera un prompt para resumir notas |
+A continuación se presenta un detalle completo de los componentes implementados en este servidor MCP, organizados por su tipo y funcionalidad:
+
+| Tipo | Nombre | Descripción | Parámetros | Valor de retorno |
+|------|--------|-------------|------------|------------------|
+| 🛠️ **Tool** | `add_note` | Añade una nueva nota adhesiva al archivo de almacenamiento | `message` (str): Texto de la nota a guardar | Confirmación con el texto de la nota añadida |
+| 🛠️ **Tool** | `read_notes` | Recupera y muestra todas las notas almacenadas | Ninguno | Lista completa de todas las notas existentes |
+| 📚 **Resource** | `notes://latest` | Proporciona acceso rápido a la nota más reciente | Ninguno | Texto de la última nota añadida |
+| 💬 **Prompt** | `note_summary_prompt` | Genera instrucciones para que el modelo cree un resumen estructurado | Ninguno | Plantilla de prompt con las notas actuales |
+
+Estos componentes trabajan en conjunto para proporcionar una gestión completa de notas adhesivas a través del Protocolo de Contexto de Modelo (MCP).
 
 ---
 
