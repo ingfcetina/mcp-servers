@@ -220,12 +220,7 @@ sequenceDiagram
    }
    ```
 
-3. **Abre el Inspector MCP**:
-   - Abre la paleta de comandos (Ctrl+Shift+P)
-   - Busca y selecciona "MCP: Open Inspector"
-   - Selecciona "Demo" de la lista desplegable
-
-4. **Interactúa con el servidor MCP mediante GitHub Copilot**:
+3. **Interactúa con el servidor MCP mediante GitHub Copilot**:
    - Con Copilot en modo agente, podrás utilizar comandos como `add_note`, `read_notes`, y `get_latest_note` directamente
 
 #### Integración con Claude AI
