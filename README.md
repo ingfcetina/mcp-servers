@@ -37,14 +37,11 @@ Este repositorio contiene los materiales y ejemplos utilizados en la charla de u
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/tu-usuario/charla-mcp-copilot.git
+git clone https://github.com/ingfcetina/mcp-servers.git
 
 # Navegar al directorio del proyecto
-cd charla-mcp-copilot
+cd mcp-servers
 
-# Instalar dependencias
-npm install
-```
 
 ### 🔗 Recursos adicionales
 
