@@ -41,7 +41,7 @@ git clone https://github.com/ingfcetina/mcp-servers.git
 
 # Navegar al directorio del proyecto
 cd mcp-servers
-
+```
 
 ### 🔗 Recursos adicionales
 
