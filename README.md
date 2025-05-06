@@ -8,7 +8,7 @@ Este repositorio contiene materiales, ejemplos y una implementación de un servi
 
 ### 📋 Descripción
 
-Este repositorio contiene los materiales y ejemplos utilizados en la charla de una hora sobre la creación de servidores MCP (Model Context Protocol) y su integración con GitHub Copilot en modo agente. La charla está orientada a desarrolladores interesados en extender las capacidades de Copilot mediante servidores personalizados y comprender el flujo de trabajo de los agentes.
+Esta charla de una hora está orientada a desarrolladores interesados en extender las capacidades de GitHub Copilot mediante servidores MCP personalizados y comprender el flujo de trabajo de los agentes. Aprenderás a crear e integrar servidores MCP con GitHub Copilot y Claude AI.
 
 ### 📚 Temario
 
@@ -179,7 +179,7 @@ sequenceDiagram
      ```
    - En Bash:
      ```bash
-     source .venv/Scripts/activate
+     source .venv/Scripts\activate
      ```
 
 4. **Instala las dependencias MCP y otras requeridas**:
@@ -193,12 +193,15 @@ sequenceDiagram
 
 #### Integración con VS Code
 
-1. **Asegúrate de tener la extensión MCP instalada**:
+1. **Asegúrate de tener GitHub Copilot instalado**:
    - Abre VS Code
    - Ve a la pestaña de extensiones (Ctrl+Shift+X)
-   - Busca "MCP" e instala la extensión oficial
+   - Busca "GitHub Copilot" e instala la extensión oficial
+   - Asegúrate de tener acceso a la funcionalidad de Copilot en modo agente
 
-2. **Configura el servidor en settings.json**:
+2. **Configura el servidor MCP en settings.json**:
+   - Como se muestra en la imagen compartida ![alt text](project/settings.png) VS Code ya tiene configuración para MCP
+   - Puedes verificar o modificar la configuración en tu settings.json:
    ```json
    "mcp": {
        "servers": {
@@ -217,13 +220,13 @@ sequenceDiagram
    }
    ```
 
-3. **Abre el Inspector MCP y selecciona "Demo"**:
+3. **Abre el Inspector MCP**:
    - Abre la paleta de comandos (Ctrl+Shift+P)
    - Busca y selecciona "MCP: Open Inspector"
    - Selecciona "Demo" de la lista desplegable
 
-4. **Interactúa con el servidor MCP**:
-   - Ahora puedes usar comandos como `add_note`, `read_notes`, y `get_latest_note` directamente desde el Inspector MCP
+4. **Interactúa con el servidor MCP mediante GitHub Copilot**:
+   - Con Copilot en modo agente, podrás utilizar comandos como `add_note`, `read_notes`, y `get_latest_note` directamente
 
 #### Integración con Claude AI
 
